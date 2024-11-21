@@ -1,0 +1,1 @@
+export type UrgencyLevel = 'low' | 'medium' | 'high'
