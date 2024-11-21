@@ -20,7 +20,7 @@ const tasks: Task[] = [
         deadlineDate: new Date('2024-11-24')
     },
     {
-        id: 2,
+        id: 3,
         title: 'Build portfolio piece',
         description: 'Build final portfolio project according to user stories and brief',
         completed: false,
@@ -30,4 +30,4 @@ const tasks: Task[] = [
     }
 ]
 
-console.log(tasks)
+// console.log(tasks)
