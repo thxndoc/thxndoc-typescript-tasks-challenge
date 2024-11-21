@@ -31,3 +31,19 @@ const tasks: Task[] = [
 ]
 
 // console.log(tasks)
+const tasksContainer = document.querySelector('.tasks-container') as HTMLDivElement
+
+const taskItems = tasks.map(task => {
+    const status = task.completed ? 'Yes' : 'No'
+
+    return `
+        <h2>Title: ${task.title}</h2>
+        <p>Description: ${task.description}</p>
+        <p>Completed: ${status}</p>
+        <p>Urgency: ${task.urgency}</p>
+        <p>Created: ${task.dateCreated}</p>
+        <p>Deadline: ${task.deadlineDate}</p>
+    `
+})
+
+tasksContainer.innerHTML = taskItems.join('')
